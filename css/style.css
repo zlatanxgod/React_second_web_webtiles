@@ -1,1 +1,76 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap");
+
+* {
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+body {
+  background: rgb(248, 245, 245);
+}
+.heading {
+  text-align: center;
+  font-size: 36px;
+  padding: 22px 0px; /* y azis */
+  color: rgb(73, 206, 206);
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(220px, 1fr)
+  ); /* repeat each card automatically, auto calc*/
+  gap: 15px;
+  padding: 20px;
+}
+
+.card-container .card {
+  padding: 10px;
+  border: 2px solid rgb(82, 82, 170);
+  border-radius: 10px;
+  text-align: justify;
+  background: white;
+  box-shadow: 5px 5px;
+}
+
+.para {
+  padding: 7%; /*relative to parent container */
+  color: gray;
+}
+
+.know-more-link span a {
+  color: aqua;
+}
+.card .class-title {
+  text-align: center;
+  color: green;
+  font-size: 22px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.card .card-icon {
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+  padding: 5% 0%;
+}
+
+.card .know-more-link {
+  text-align: right;
+}
+
+.card-icon span {
+  /* no .dot here */
+  font-size: 32px;
+  color: green;
+}
+
+.know-more-link span a :hover {
+  color: black;
+}
